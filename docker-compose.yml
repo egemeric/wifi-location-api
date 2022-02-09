@@ -1,0 +1,33 @@
+version: '3.7'
+services:
+  elastic01:
+    image: elasticsearch:7.17.0
+    container_name: elastic01
+    hostname: elastic01
+    environment:
+      - node.name=elastic01
+      - cluster.name=elastic01
+      - cluster.initial_master_nodes=elastic01
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+
+    volumes:
+      - data-elastic01:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+  
+  wifi-location-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8888:8080
+    volumes:
+      - ./:/app/api
+
+volumes:
+  data-elastic01:
+    external: false
+  
+
+
