@@ -5,10 +5,7 @@ services:
     container_name: elastic01
     hostname: elastic01
     environment:
-      - node.name=elastic01
-      - cluster.name=elastic01
-      - cluster.initial_master_nodes=elastic01
-      - bootstrap.memory_lock=true
+      - discovery.type=single-node 
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
 
     volumes:
