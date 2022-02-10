@@ -12,6 +12,11 @@ apt-get install libmnl0 libmnl-dev
 ```
 
 ## Usage
+### Compaile 
+```
+make clean
+make
+```
 You may have use 'sudo' with
 
 ```
