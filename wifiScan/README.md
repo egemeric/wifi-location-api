@@ -1,6 +1,19 @@
-# Development files for libmnl (fedora)
+this program scans the wifi networks and logs with their GPS locations(under development)  
+## Development files for libmnl (fedora)
 
 ```
-yum install libmnl.x86_64 libmnl-devel.x86_64
+yum install libmnl.x86_64 libmnl-devel.x86_64  
+```
 
-```shell
+## Development files for libmnl (debian or ubuntu)
+
+```
+apt-get install libmnl0 libmnl-dev
+```
+
+## Usage
+You may have use 'sudo' with
+
+```
+./bin/wifiScan wlp0s20u8
+```
