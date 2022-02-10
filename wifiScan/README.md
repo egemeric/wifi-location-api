@@ -1,4 +1,5 @@
-this program scans the wifi networks and logs with their GPS locations(under development)  
+This program scans the wifi networks and logs with their GPS locations(under development)  
+This program uses bmegli/wifi-scan project to scanning wifi aps. [https://github.com/bmegli/wifi-scan](https://github.com/bmegli/wifi-scan) 
 ## Development files for libmnl (fedora)
 
 ```
